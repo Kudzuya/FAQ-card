@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <div class="left">
+                <div class="box">
+                </div>
+            </div>
+            <div class="right">
+                <ul><h1>FAQ</h1>
+
+                <li><div class="howMany"><h2 id="h1">How many team members can I invite?<img class="svg" src="icon-arrow-down.svg" alt="arrowIcon"></h2></div>
+                    <p class="howManyP" id="h1P">You can invite up to 2 additional users on the Free plan. There is no limit on
+                    team members for the Premium plan.</p><div class="line-1 padding"></div>
+                </li>
+                <script>
+                    const h1 = document.getElementById("h1");
+                    const p1 = document.getElementById("h1P");
+              
+                    h1.addEventListener("click", function() {
+                      if (p1.style.display === "none") {
+                        p1.style.display = "block";
+                      } else {
+                        p1.style.display = "none";
+                      }
+                    });
+                  </script>
+
+
+            <li><div class="what"> <h2 id="h2">What is the maximum file upload size?<img class="svg"  src="icon-arrow-down.svg" alt="arrowIcon"></h2>
+                </div>
+                    <p class="whatP" id="h2P">No more than 2GB. All files in your account must fit your allotted storage space.</p><div class="line-1 padding"></div></li>
+                    <script>
+                        const h2 = document.getElementById("h2");
+                        const p2 = document.getElementById("h2P");
+                  
+                        h2.addEventListener("click", function() {
+                          if (p2.style.display === "none") {
+                            p2.style.display = "block";
+                            p2.style.display = "block";
+                          } else {
+                            p2.style.display = "none";
+                          }
+                        });
+                      </script>
+                
+
+                <li><div class="howDo"><h2 id="h3">How do I reset my password?<img class="svg" src="icon-arrow-down.svg" alt="arrowIcon"></h2></div>
+                    <p class="howDoP" id="h3P">Click “Forgot password” from the login page or “Change password” from your profile page.
+                    A reset link will be emailed to you.</p><div class="line-1 padding"></div></li>
+                    <script>
+                        const h3 = document.getElementById("h3");
+                        const p3 = document.getElementById("h3P");
+                  
+                        h3.addEventListener("click", function() {
+                          if (p3.style.display === "none") {
+                            p3.style.display = "block";
+                          } else {
+                            p3.style.display = "none";
+                          }
+                        });
+                      </script>
+                
+
+                <li><div class="can"><h2 id="h4">Can I cancel my subscription?<img class="svg" src="icon-arrow-down.svg" alt="arrowIcon"></h2></div>
+                    <p class="canP" id="h4P">Yes! Send us a message and we’ll process your request no questions asked.</p><div class="line-1 padding"></div> </li>
+                    <script>
+                        const h4 = document.getElementById("h4");
+                        const p4 = document.getElementById("h4P");
+                  
+                        h4.addEventListener("click", function() {
+                          if (p4.style.display === "none") {
+                            p4.style.display = "block";
+                          } else {
+                            p4.style.display = "none";
+                          }
+                        });
+                      </script>
+                
+
+                <li><div class="do"><h2 id="h5">Do you provide additional support?<img class="svg" src="icon-arrow-down.svg" alt="arrowIcon"></h2></div>
+                    <p class="doP" id="h5P">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p><div class="line-1 padding"></div></li>
+                    <script>
+                        const h5 = document.getElementById("h5");
+                        const p5 = document.getElementById("h5P");
+                  
+                        h5.addEventListener("click", function() {
+                          if (p5.style.display === "none") {
+                            p5.style.display = "block";
+                          } else {
+                            p5.style.display = "none";
+                          }
+                        });
+                      </script>
+                
+                </ul>
+            </div>
+        </div>
+        <footer class="kudzuya">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/Kudzuya" target="_blank">Kudzuya | @Kudzuya</a>.
+        </footer>
+    </main>
+</body>
+
+</html>

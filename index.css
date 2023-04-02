@@ -1,0 +1,176 @@
+body {
+    background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+
+}
+
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    letter-spacing: 0.05rem;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.svg{
+    width: 0.7em;
+    vertical-align: middle
+}
+
+.card {
+    padding: 5% 0;
+    min-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-image: url("bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 10px 230px;
+    background-size: 42%;
+    border-radius: 25px;
+}
+h1{
+    font-size: 2.3em;
+    padding-bottom: 30px;
+}
+h2{
+    font-size: 1.1em;
+}
+li{
+    padding-bottom: 15px;
+}
+
+.left {
+
+    background-image: url('illustration-box-desktop.svg'), url('illustration-woman-online-desktop.svg');
+    background-position: -60px 250px, center 100%;
+    background-repeat: no-repeat;
+    background-size: 45% auto, 100% auto;
+    height: 500px;
+    width: 50%;
+    margin-left: -15%;
+}
+
+.right {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 500px;
+    width: 50%;
+}
+.howMany:hover, .what:hover, .howDo:hover, .can:hover, .do:hover{
+    color:hsl(14, 88%, 65%);
+}
+.howManyP, .whatP, .howDoP, .canP, .doP{
+    padding-top: 10px;
+    color: hsl(240, 6%, 50%);
+}
+
+.line-1 {
+    width: 500px;
+    height: 1px;
+    background: hsl(240, 6%, 50%);
+    opacity: 0.5;
+  }
+
+
+/* My info */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    color: hsl(240, 5%, 91%);
+    font-size: 20px;
+}
+
+footer a {
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* endInfo*/
+
+/* Mobile */
+@media (max-width: 1000px)
+{  
+    main{
+        padding-left: 0px;
+        padding-right: 0px;
+     width: 100%;
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    align-items: center;
+    justify-content: center;
+
+    }
+    .card{
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        min-width: fit-content;
+        background-color: #fff;
+    background-image: url("bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 80px 290px;
+    background-size: 52%;
+        }
+    .left {
+        padding-top: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: block;
+        background-image: url('illustration-box-desktop.svg'), url('illustration-woman-online-desktop.svg');
+        background-position: -25px 370px, center 100%;
+        background-repeat: no-repeat;
+        background-size: 45% auto, 100% auto;
+        height: 500px;
+        width: 50%;
+    }
+    .right{
+        padding-left: 0px;
+        padding-right: 0px;
+        min-height: 150vh;
+        height: 100%;
+    display: block;
+    }
+ul{
+    width: 100%;
+    padding: 0 10%;
+}
+footer{
+    padding-left: 0px;
+    padding-right: 0px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    font-size: 12px;
+}
+}
